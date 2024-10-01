@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏 - 滢姐AI制作</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-header">
+            <!-- 加载头像（avatar.jpg） -->
+            <img id="avatar" src="avatar.jpg" alt="滢姐头像">
+            <h1>贪吃蛇游戏</h1>
+        </div>
+
+        <!-- 游戏画布 -->
+        <canvas id="game-board"></canvas>
+
+        <!-- 分数、速度和最高分 -->
+        <div id="game-info">
+            <div id="score">分数: 0</div>
+            <div id="speed-value">速度: 1.0</div>
+            <div id="high-score">最高分: 0</div>
+            <button id="start-btn">开始游戏</button> <!-- New Start Button -->
+        </div>
+        
+        <!-- 显示消息 -->
+        <div id="message"></div>
+
+        <!-- 虚拟操作按钮（方向键布局） -->
+        <div id="virtual-controls">
+            <button id="up-btn">↑</button>
+            <button id="left-btn">←</button>
+            <button id="right-btn">→</button>
+            <button id="down-btn">↓</button>
+        </div>
+
+        <!-- 游戏说明放在底部，紧凑显示两列 -->
+        <div id="instructions">
+            <p>使用方向键控制蛇的移动</p>
+            <p>A键减速，S键默认，D键加速</p>
+            <p>空格键暂停/继续游戏</p>
+            <p>滢姐AI制作!!!</p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    text-align: center;
+    max-width: 620px;
+    padding: 8px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    color: #a8a2a2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    margin-right: 60px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#virtual-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+#up-btn {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#left-btn {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#right-btn {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#down-btn {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#game-board {
+    border: 2px solid var(--snake-color);
+    background-color: var(--background-color);
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+}
+
+#start-btn {
+    background-color: var(--button-color, #a33f5b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#start-btn:active {
+    background-color: var(--button-active-color, #2e0e21);
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+    width: 100%;
+    max-width: 480px;
+}
+
+#score, #speed-value, #high-score {
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 1px;
+    font-size: 14px;  /* 调整字体大小 */
+    color: var(--snake-color);
+    text-align: center;  /* 居中显示 */
+    max-width: 100%;  /* 确保消息不会超出容器宽度 */
+    white-space: nowrap;  /* 防止文字换行 */
+    overflow: hidden;  /* 隐藏超出部分 */
+    text-overflow: ellipsis;  /* 使用省略号显示过长内容 */
+}
+
+
+
+#virtual-controls {
+    margin-top: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+}
+
+#virtual-controls button {
+    background-color: var(--button-color, #0c4c1d);
+    color: rgb(198, 192, 192);
+    border: none;
+    padding: 0px;
+    border-radius: 15px;
+    font-size: 36px;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+}
+
+#virtual-controls button:active {
+    background-color: #F57C00;
+}
+
+#instructions {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    max-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#instructions p {
+    width: 45%;
+    margin: 0;
+}
+
+/* 自定义颜色变量 */
+:root {
+    --snake-color: #4CAF50;
+    --food-color: #FF4136;
+    --background-color: #000;
+    --grid-color: #333;
+    --button-color: #1c7434;
+    --button-active-color: #2e0e21;
+}
+
+/* 响应式布局 */
+@media (max-width: 480px) {
+    #game-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
