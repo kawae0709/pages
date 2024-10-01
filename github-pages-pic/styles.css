@@ -25,7 +25,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    margin-top: 20px;
 }
 
 #avatar {
