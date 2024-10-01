@@ -1,0 +1,96 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 15%;
+    margin-right: 50px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;  /* 与游戏背景颜色一致 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 620px;  /* 设置与游戏页面相同的宽度 */
+    padding: 8px;  /* 保持和游戏页面相同的间距 */
+    background-color: #333;  /* 背景颜色保持一致 */
+    border-radius: 10px;  /* 一致的圆角样式 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* 添加轻微的阴影效果 */
+    color: #a4a8a2;  /* 字体颜色与游戏页面一致 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #eddcdc;
+}
+
+.game-link {
+    margin-bottom: 5px;
+}
+
+.game-link a {
+    text-decoration: none;
+    color: #fff;  /* 超链接颜色保持一致 */
+}
+
+.game-link img {
+    width: 90%;
+    max-width: 500px;  /* 与游戏中 #game-board 的最大宽度一致 */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.game-link img:hover {
+    transform: scale(1.05);  /* 图片悬停时放大效果 */
+}
+
+h2 {
+    margin: 3px 0;
+    color: #63d66d;  /* 与贪吃蛇的颜色一致 */
+    margin-top: 5px;
+    font-size: 20px;  /* You can adjust the size as needed */
+}
+
+p {
+    color: #a8a2a2;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* 响应式布局 */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .game-link img {
+        max-width: 100%;
+    }
+}
