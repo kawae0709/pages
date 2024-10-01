@@ -11,7 +11,8 @@
     width: 70px;
     height: 70px;
     border-radius: 15%;
-    margin-right: 50px;
+    margin-left: 100px;    
+    margin-right: 100px;
 }
 
 
@@ -23,30 +24,33 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #222;  /* 与游戏背景颜色一致 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #222;
+    /* 移除 display: flex; */
     margin: 0;
+    overflow-y: auto;    
+    min-height: 100vh;  /* 确保内容最小高度为视口高度 */
+    padding-top: 20px;  /* 可根据需要调整填充以避免遮挡顶部 */
 }
+
 
 .container {
+    max-width: 620px;
+    margin: 0 auto;  /* 自动水平居中 */
+    padding: 8px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #a4a8a2;
     text-align: center;
-    max-width: 620px;  /* 设置与游戏页面相同的宽度 */
-    padding: 8px;  /* 保持和游戏页面相同的间距 */
-    background-color: #333;  /* 背景颜色保持一致 */
-    border-radius: 10px;  /* 一致的圆角样式 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* 添加轻微的阴影效果 */
-    color: #a4a8a2;  /* 字体颜色与游戏页面一致 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
+
+
 h1 {
-    margin-bottom: 5px;
+
+    margin: 0;  /* 去除默认的 margin */
     color: #eddcdc;
+    font-size: 24px;  /* 适当调整字体大小 */
 }
 
 .game-link {
@@ -59,8 +63,8 @@ h1 {
 }
 
 .game-link img {
-    width: 90%;
-    max-width: 500px;  /* 与游戏中 #game-board 的最大宽度一致 */
+    width: 100%;
+    max-width: 550px;  /* 与游戏中 #game-board 的最大宽度一致 */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
