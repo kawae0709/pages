@@ -29,7 +29,7 @@ body {
     margin: 0;
     overflow-y: auto;    
     min-height: 100vh;  /* 确保内容最小高度为视口高度 */
-    padding-top: 20px;  /* 可根据需要调整填充以避免遮挡顶部 */
+    /* padding-top: 20px;  可根据需要调整填充以避免遮挡顶部 */
 }
 
 

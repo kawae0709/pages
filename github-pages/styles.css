@@ -6,7 +6,7 @@ body {
     margin: 0;
     background-color: #222;
     font-family: Arial, sans-serif;
-    padding-top: 25px;  /* 可根据需要调整填充以避免遮挡顶部 */    
+    /* padding-top: 25px;  /* 可根据需要调整填充以避免遮挡顶部 */     */
 }
 
 #game-container {

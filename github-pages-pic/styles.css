@@ -1,27 +1,52 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
     margin: 0;
-    background-color: #222;
-    font-family: Arial, sans-serif;
-    padding-top: 25px;  /* 可根据需要调整填充以避免遮挡顶部 */
-
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#game-container {
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    margin: 0;
+    overflow-y: auto;    
+    min-height: 100vh;  /* Ensure content height is at least the viewport height */
+}
+
+.container {
     max-width: 620px;
+    margin: 0 auto;  /* 自动水平居中 */
     padding: 8px;
     background-color: #333;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #a4a8a2;
+    text-align: center;
+    position: relative;
+    top: 50%;  /* 垂直居中 */
+    transform: translateY(-50%);  /* 通过 translate 实现垂直居中 */
+}
+
+h1 {
+    margin: 0;
+    color: #eddcdc;
+    font-size: 24px;  /* Adjust font size */
+}
+
+
+#game-container {
+    text-align: center;
+    max-width: 520px;
+    padding: 8px;
+    background-color: #333;
+    border-radius: 10px;
     color: #a8a2a2;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: center;  /* 水平居中 */
 }
+
 
 #game-header {
     display: flex;
@@ -38,9 +63,6 @@ body {
     margin-right: 60px;
 }
 
-h1 {
-    margin: 0;
-}
 
 #virtual-controls {
     display: grid;
@@ -107,22 +129,22 @@ h1 {
 
 #message {
     margin-top: 1px;
-    font-size: 14px;  /* 调整字体大小 */
+    font-size: 14px;
     color: var(--snake-color);
-    text-align: center;  /* 居中显示 */
-    max-width: 100%;  /* 确保消息不会超出容器宽度 */
-    white-space: nowrap;  /* 防止文字换行 */
-    overflow: hidden;  /* 隐藏超出部分 */
-    text-overflow: ellipsis;  /* 使用省略号显示过长内容 */
+    text-align: center;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
-
 #virtual-controls {
-    margin-top: 3px;
+    margin-top: 10px;  /* 给出更多间距 */
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2px;
+    gap: 8px;
 }
 
 #virtual-controls button {
@@ -168,8 +190,9 @@ h1 {
 
 /* 响应式布局 */
 @media (max-width: 480px) {
-    #game-container {
+    .container {
         max-width: 100%;
         padding: 10px;
+        transform: translate(-50%, -30%); /* 调整在小屏幕上的居中位置 */
     }
-
+}
