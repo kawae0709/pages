@@ -99,9 +99,5 @@ p {
         max-width: 90%;
     }
 
-    /* 针对手机端调整header的margin-top */
-    .header {
-        margin-top: 60px;  /* 增大手机端的顶部间距 */
-    }
 
 }
