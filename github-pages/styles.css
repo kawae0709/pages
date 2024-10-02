@@ -2,10 +2,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    overflow: auto;
+    min-height: 100vh;
+    margin: 0 auto;
     background-color: #222;
     font-family: Arial, sans-serif;
+
     /* padding-top: 25px;  /* 可根据需要调整填充以避免遮挡顶部 */    
 }
 
