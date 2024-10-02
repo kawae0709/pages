@@ -59,10 +59,10 @@ h1 {
 }
 
 #avatar {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 30%;
-    margin-right: 60px;
+    margin-right: 100px;
 }
 
 
@@ -153,10 +153,10 @@ h1 {
     border: none;
     padding: 0px;
     border-radius: 15px;
-    font-size: 36px;
+    font-size: 38px;
     cursor: pointer;
-    width: 115px;
-    height: 84px;
+    width: 135px;
+    height: 105px;
 }
 
 #virtual-controls button:active {
@@ -188,11 +188,64 @@ h1 {
     --button-active-color: #2e0e21;
 }
 
-/* 响应式布局
-@media (max-width: 480px) {
+/* 响应式设计针对小于 720px 宽度的设备 */
+@media (max-width: 720px) {
+
     #game-container {
-        max-width: 100%;
-        padding: 1px;
+        max-width: 99vw; /* Adjust if needed for smaller screens */
+        padding: 1vw; 
     }
 
-} */
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    #avatar {
+        width: 13vw;
+        height: 13vw;
+        margin-right: 17vw; 
+    }
+
+    #virtual-controls {
+        gap: 0vw;
+        margin-top: 0vw;
+    }
+
+    #virtual-controls button {
+        width: 20vw; 
+        height: 15.5vw; 
+        font-size: 7vw; 
+        border-radius: 2vw;
+    }
+
+    #game-board {
+        border-width: 0.4vw; /* Adjust border thickness */
+    }
+
+    #start-btn {
+        padding: 1vw 3vw;
+        font-size: 2.5vw;
+        border-radius: 1vw;
+    }
+
+    #game-info {
+        margin-top: 0.5vw;
+        font-size: 2.9vw; 
+    }
+
+    #score, 
+    #speed-value, 
+    #high-score {
+        font-size: 2.8vw; 
+    }
+
+    #message {
+        margin: 1vw;
+        font-size: 2.3vw;
+    }
+
+    #instructions {
+        margin-top: 1vw;
+        font-size: 2.5vw;
+    }
+}

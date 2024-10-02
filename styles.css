@@ -94,15 +94,44 @@ p {
 }
 
 /* 响应式布局 */
-@media (max-width: 620px) {
+@media (max-width: 600px) {
+
+    .header {
+        margin-bottom: 1vw; 
+    }
+
+    .avatar {
+        width: 10vw;   
+        height: 10vw;  
+        margin-right: 10vw;  
+        margin-bottom: 0.5vw;
+    }
+
+    body {
+        padding-top: 1vw; 
+    }
+
     .container {
-        max-width: 100%;
-        padding: 10px;
+        padding: 1vw; 
     }
 
-    .game-link img {
-        max-width: 90%;
+    h1 {
+        font-size: 5vw; 
     }
 
+    .game-link {
+        margin-bottom: 0vw; 
+    }
 
+    h2 {
+        font-size: 3.5vw; 
+        margin-top: 0.5vw;  
+        margin-bottom: 1vw;
+    }
+
+    p {
+        font-size: 2vw;  
+        margin-top: 1vw; 
+        margin-bottom: 1vw; 
+    }
 }
