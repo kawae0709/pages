@@ -108,8 +108,8 @@ h1 {
 }
 
 #message {
-    margin: 5px;
-    font-size: 16px;  /* 调整字体大小 */
+    margin: 2px;
+    font-size: 14px;  /* 调整字体大小 */
     /* color: var(--snake-color); */
     text-align: center;  /* 居中显示 */
     max-width: 100%;  /* 确保消息不会超出容器宽度 */
