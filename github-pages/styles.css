@@ -6,7 +6,7 @@ body {
     margin: 0;
     background-color: #222;
     font-family: Arial, sans-serif;
-    /* padding-top: 25px;  /* 可根据需要调整填充以避免遮挡顶部 */     */
+    /* padding-top: 25px;  /* 可根据需要调整填充以避免遮挡顶部 */    
 }
 
 #game-container {
@@ -165,6 +165,7 @@ h1 {
     --button-active-color: #2e0e21;
 }
 
+
 /* 响应式布局 */
 @media (max-width: 480px) {
     #game-container {
@@ -172,3 +173,4 @@ h1 {
         padding: 10px;
     }
 
+}
