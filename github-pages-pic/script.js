@@ -99,7 +99,7 @@ function drawSnake() {
 
 
 function drawFood() {
-    const emojiSize = gridSize * 0.8;  // 适配emoji的大小
+    const emojiSize = gridSize * 0.95;  // 适配emoji的大小
     ctx.font = `${emojiSize}px Arial`;  // 设置字体大小
     ctx.textAlign = 'center';  // 水平居中
     ctx.textBaseline = 'middle';  // 垂直居中

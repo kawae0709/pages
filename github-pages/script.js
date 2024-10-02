@@ -82,7 +82,7 @@ function moveSnake() {
 function drawSnake() {
     snake.forEach(segment => {
         const gradient = ctx.createLinearGradient(segment.x * gridSize, segment.y * gridSize, (segment.x + 1) * gridSize, (segment.y + 1) * gridSize);
-        gradient.addColorStop(0, '#4CAF50');
+        gradient.addColorStop(0, '#81e785');
         gradient.addColorStop(1, '#006400');
         ctx.fillStyle = gradient;
         ctx.fillRect(segment.x * gridSize, segment.y * gridSize, gridSize - 2, gridSize - 2);
@@ -91,7 +91,7 @@ function drawSnake() {
 
 
 function drawFood() {
-    const emojiSize = gridSize * 0.8;  // 适配emoji的大小
+    const emojiSize = gridSize * 0.95 ;  // 适配emoji的大小
     ctx.font = `${emojiSize}px Arial`;  // 设置字体大小
     ctx.textAlign = 'center';  // 水平居中
     ctx.textBaseline = 'middle';  // 垂直居中
