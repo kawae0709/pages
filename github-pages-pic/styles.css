@@ -32,14 +32,14 @@ body {
 h1 {
     margin: 0;
     color: #eddcdc;
-    font-size: 24px;  /* Adjust font size */
+    font-size: 34px;  /* Adjust font size */
 }
 
 
 #game-container {
     text-align: center;
-    max-width: 520px;
-    padding: 8px;
+    max-width: 720px;
+    padding: 3px 5px 3px 5px;  /* Adjust padding */
     background-color: #333;
     border-radius: 10px;
     color: #a8a2a2;
@@ -50,15 +50,12 @@ h1 {
     align-items: center;  /* 水平居中 */
 }
 
-
-
-
 #game-header {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 #avatar {
@@ -100,9 +97,7 @@ h1 {
 #game-board {
     border: 2px solid var(--snake-color);
     background-color: var(--background-color);
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
+    max-width: 100%;
 }
 
 #start-btn {
@@ -123,13 +118,13 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3px;
-    width: 100%;
-    max-width: 480px;
+    margin-top: 5px;
+    width: 90%;
+    /* max-width: 480px; */
 }
 
 #score, #speed-value, #high-score {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #message {
@@ -149,7 +144,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 8px;
+    gap:0px;
 }
 
 #virtual-controls button {
@@ -160,26 +155,26 @@ h1 {
     border-radius: 15px;
     font-size: 36px;
     cursor: pointer;
-    width: 100px;
-    height: 70px;
+    width: 115px;
+    height: 84px;
 }
 
 #virtual-controls button:active {
-    background-color: #F57C00;
+    background-color: #3a0512;
 }
 
 #instructions {
     margin-top: 5px;
     text-align: center;
     font-size: 13px;
-    max-width: 480px;
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 #instructions p {
-    width: 45%;
+    width: 48%;
     margin: 0;
 }
 
@@ -193,11 +188,11 @@ h1 {
     --button-active-color: #2e0e21;
 }
 
-/* 响应式布局 */
+/* 响应式布局
 @media (max-width: 480px) {
-    .container {
+    #game-container {
         max-width: 100%;
-        padding: 10px;
-        transform: translate(-50%, -30%); /* 调整在小屏幕上的居中位置 */
+        padding: 1px;
     }
-}
+
+} */
