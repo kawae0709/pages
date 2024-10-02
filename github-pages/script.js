@@ -20,13 +20,6 @@ canvas.width = targetWidth * scale;
 canvas.height = (tileCount * gridSize) * scale;
 ctx.scale(scale, scale);  // 缩放以适应屏幕上的显示
 
-
-
-
-
-
-
-
 let snake = [{x: 10, y: 10}];
 let food = {};
 let dx = 0;
@@ -91,7 +84,7 @@ function drawSnake() {
 
 
 function drawFood() {
-    const emojiSize = gridSize * 0.95 ;  // 适配emoji的大小
+    const emojiSize = gridSize * 1 ;  // 适配emoji的大小
     ctx.font = `${emojiSize}px Arial`;  // 设置字体大小
     ctx.textAlign = 'center';  // 水平居中
     ctx.textBaseline = 'middle';  // 垂直居中
@@ -103,8 +96,8 @@ function drawFood() {
 }
 
 
-const foodEmojis = ['🍎', '🍌', '🍔', '🍈', '🍇', '🍓'];  // 多个食物的emoji
-let currentFoodEmoji = '🍎';  // 当前食物的emoji
+const foodEmojis = ['🍎', '🍌', '🍔', '🍈', '🍇', '🍓', '🍕', '🥕', '🐢', '🌶️', '🍄‍🟫', '🪿', '🍗', '🍩', '💩'];  // 多个食物的emoji
+let currentFoodEmoji = '💩';  // 当前食物的emoji
 
 function generateFood() {
     food = {
